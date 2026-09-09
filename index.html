@@ -2,229 +2,352 @@
 <html lang="en-GB">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cheap Business Class Flights to Trinidad from UK | Galaxy Fly</title>
-<meta name="description" content="Discover Business Class flight options from the UK to Trinidad, with journeys to Port of Spain and Piarco International Airport. Galaxy Fly.">
+<meta name="description" content="Discover Business Class flight options from the UK to Trinidad, with journeys to Port of Spain and Piarco International Airport. Request a quote with Galaxy Fly.">
 <link rel="canonical" href="https://galaxyfly.co.uk/">
 <meta name="robots" content="index,follow">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Cheap Business Class Flights to Trinidad from UK | Galaxy Fly">
 <meta property="og:description" content="Business Class options from UK airports to Trinidad, Port of Spain and Piarco International Airport.">
 <meta property="og:url" content="https://galaxyfly.co.uk/">
-<meta name="theme-color" content="#0B1A1F">
+<meta name="theme-color" content="#0c1a24">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{
-  --ink:#0B1A1F;--deep:#12262C;--gold:#C4A35A;--sand:#F6F1E8;--sea:#1A4A52;
-  --mute:#5C6B72;--max:1120px;
-  --serif:"Libre Baskerville",Georgia,serif;--sans:"DM Sans",system-ui,sans-serif;
+:root {
+  --navy: #0c1a24;
+  --navy-2: #152636;
+  --gold: #c4a35a;
+  --cream: #f7f4ef;
+  --muted: #6b7785;
+  --line: #e8e4dc;
+  --max: 1100px;
+  --serif: "Playfair Display", Georgia, serif;
+  --sans: "Inter", system-ui, sans-serif;
 }
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:var(--sans);color:#1a2428;background:#fff;line-height:1.65;overflow-x:hidden}
-a{color:inherit;text-decoration:none}
-img{max-width:100%;display:block;height:auto}
-.w{width:min(var(--max),calc(100% - 32px));margin:0 auto}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--sans); color: #1c2730; background: #fff; line-height: 1.65; overflow-x: hidden; }
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; height: auto; display: block; }
+.wrap { width: min(var(--max), calc(100% - 40px)); margin: 0 auto; }
 
-/* NAV transparent over hero */
-.nav{position:fixed;inset:0 0 auto;z-index:100;padding:20px 0;transition:.35s}
-.nav.scrolled{background:rgba(11,26,31,.94);backdrop-filter:blur(12px);padding:12px 0;box-shadow:0 4px 20px rgba(0,0,0,.25)}
-.nav-in{display:flex;align-items:center;justify-content:space-between}
-.logo{color:#fff;font-weight:700;font-size:12px;letter-spacing:.2em;display:flex;align-items:center;gap:10px}
-.logo b{font-family:var(--serif);font-size:20px;font-weight:400;color:var(--gold);border:1px solid var(--gold);width:32px;height:32px;display:grid;place-items:center;font-style:italic}
-.nav-l{display:flex;gap:22px;align-items:center}
-.nav-l a,.nav-l button{color:rgba(255,255,255,.9);font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;background:0;border:0;cursor:pointer;font-family:var(--sans)}
-.nav-l a:hover{color:var(--gold)}
-.dd{position:relative}
-.dd-m{display:none;position:absolute;top:140%;left:50%;transform:translateX(-50%);background:#fff;padding:8px;min-width:250px;grid-template-columns:1fr 1fr;gap:2px;box-shadow:0 16px 40px rgba(0,0,0,.18);z-index:40}
-.dd:hover .dd-m,.dd:focus-within .dd-m{display:grid}
-.dd-m a{color:#1a2428!important;padding:8px 10px;font-size:12px;text-transform:none;letter-spacing:0}
-.dd-m a:hover{background:var(--sand)}
-.nav-r{display:flex;align-items:center;gap:14px}
-.nav-r .ph{color:#fff;font-size:13px;font-weight:600}
-.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 20px;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;border:0;cursor:pointer;font-family:var(--sans);transition:transform .2s}
-.btn:hover{transform:translateY(-2px)}
-.btn-g{background:var(--gold);color:var(--ink)}
-.btn-o{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.5)}
-.btn-d{background:var(--ink);color:#fff}
-.ham{display:none;background:0;border:0;color:#fff;font-size:22px;cursor:pointer}
-.mob{display:none;position:fixed;inset:0;z-index:200;background:var(--ink);flex-direction:column;padding:24px;overflow:auto}
-.mob.open{display:flex}
-.mob a,.mob .x{color:#fff;font-size:15px;font-weight:600;padding:14px 0;border:0;border-bottom:1px solid rgba(255,255,255,.08);background:0;text-align:left;font-family:var(--sans);cursor:pointer}
-.mob .x{align-self:flex-end;font-size:20px;border:0}
+/* Header */
+.header {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+  padding: 18px 0; transition: background .3s, box-shadow .3s, padding .3s;
+}
+.header.scrolled {
+  background: rgba(12, 26, 36, 0.95); backdrop-filter: blur(12px);
+  padding: 12px 0; box-shadow: 0 4px 24px rgba(0,0,0,.15);
+}
+.header-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.logo {
+  display: flex; align-items: center; gap: 10px;
+  color: #fff; font-weight: 700; font-size: 13px; letter-spacing: 0.14em;
+}
+.logo-mark {
+  width: 34px; height: 34px; border: 1px solid var(--gold);
+  display: grid; place-items: center; font-family: var(--serif);
+  font-size: 16px; color: var(--gold); font-style: italic;
+}
+.nav-desktop { display: flex; gap: 24px; align-items: center; }
+.nav-desktop a, .nav-desktop button {
+  color: rgba(255,255,255,.88); font-size: 12px; font-weight: 600;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  background: none; border: 0; cursor: pointer; font-family: var(--sans);
+}
+.nav-desktop a:hover, .nav-desktop button:hover { color: var(--gold); }
+.dropdown { position: relative; }
+.dropdown-menu {
+  display: none; position: absolute; top: 140%; left: 50%; transform: translateX(-50%);
+  background: #fff; padding: 10px; min-width: 260px;
+  grid-template-columns: 1fr 1fr; gap: 2px;
+  box-shadow: 0 16px 40px rgba(0,0,0,.18); z-index: 60;
+}
+.dropdown:hover .dropdown-menu, .dropdown:focus-within .dropdown-menu { display: grid; }
+.dropdown-menu a {
+  color: #1c2730 !important; padding: 9px 11px; font-size: 13px;
+  text-transform: none; letter-spacing: 0; border-radius: 4px;
+}
+.dropdown-menu a:hover { background: var(--cream); }
+.header-right { display: flex; align-items: center; gap: 14px; }
+.header-phone { color: #fff; font-size: 13px; font-weight: 600; }
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 12px 22px; font-size: 12px; font-weight: 700;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  border: 0; cursor: pointer; font-family: var(--sans);
+  transition: transform .2s, background .2s, border-color .2s;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn-gold { background: var(--gold); color: var(--navy); }
+.btn-outline { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,.45); }
+.btn-outline:hover { border-color: #fff; background: rgba(255,255,255,.08); }
+.btn-navy { background: var(--navy); color: #fff; }
+.menu-toggle { display: none; background: none; border: 0; color: #fff; font-size: 22px; cursor: pointer; }
+.mobile-nav {
+  display: none; position: fixed; inset: 0; z-index: 100;
+  background: var(--navy); flex-direction: column; padding: 24px; overflow: auto;
+}
+.mobile-nav.open { display: flex; }
+.mobile-nav a, .mobile-nav .close {
+  color: #fff; font-size: 16px; font-weight: 600; padding: 14px 0;
+  border: 0; border-bottom: 1px solid rgba(255,255,255,.1);
+  background: none; text-align: left; font-family: var(--sans); cursor: pointer;
+}
+.mobile-nav .close { align-self: flex-end; font-size: 22px; border: 0; }
 
-/* HERO — Trinidad dominates */
-.hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
-.hero-img{position:absolute;inset:0;background:url("tt-vista.jpg") center/cover no-repeat;transform:scale(1.05);animation:slowzoom 30s ease-in-out infinite alternate}
-@keyframes slowzoom{to{transform:scale(1.12)}}
-.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,26,31,.4) 0%,transparent 35%,rgba(11,26,31,.7) 100%);z-index:1}
-.hero-c{position:relative;z-index:2;width:min(var(--max),calc(100% - 32px));margin:0 auto;padding:0 0 56px}
-.hero-tags{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px}
-.hero-tags span{font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;padding:5px 11px;border:1px solid rgba(255,255,255,.28)}
-.hero-tags span.g{border-color:var(--gold);color:var(--gold)}
-.ey{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:12px}
-h1{font-family:var(--serif);font-size:clamp(36px,5.2vw,58px);font-weight:400;line-height:1.08;max-width:680px;margin:0 0 16px}
-.hero-p{font-size:15px;color:rgba(255,255,255,.8);max-width:440px;margin-bottom:24px;line-height:1.7}
-.hero-btns{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:28px}
-.route{display:inline-flex;align-items:center;gap:14px;font-size:12px;font-weight:600;letter-spacing:.06em;background:rgba(11,26,31,.5);backdrop-filter:blur(8px);padding:12px 18px;border:1px solid rgba(255,255,255,.12)}
-.route .dash{width:48px;height:1px;background:var(--gold);position:relative}
-.route .dash::after{content:"✈";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:11px;color:var(--gold)}
+/* Hero */
+.hero {
+  position: relative; min-height: 88vh;
+  display: flex; align-items: flex-end; color: #fff; overflow: hidden;
+}
+.hero-bg {
+  position: absolute; inset: 0;
+  background: url("tt-vista.jpg") center/cover no-repeat;
+}
+.hero::before {
+  content: ""; position: absolute; inset: 0; z-index: 1;
+  background: linear-gradient(180deg, rgba(12,26,36,.35) 0%, rgba(12,26,36,.15) 40%, rgba(12,26,36,.78) 100%);
+}
+.hero-content {
+  position: relative; z-index: 2;
+  width: min(var(--max), calc(100% - 40px)); margin: 0 auto;
+  padding: 0 0 64px;
+}
+.eyebrow {
+  font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--gold); font-weight: 600; margin-bottom: 14px;
+}
+h1 {
+  font-family: var(--serif); font-size: clamp(34px, 5vw, 52px);
+  font-weight: 500; line-height: 1.12; max-width: 640px; margin: 0 0 16px;
+}
+.hero-lead {
+  font-size: 16px; color: rgba(255,255,255,.8); max-width: 440px;
+  margin-bottom: 28px; line-height: 1.7;
+}
+.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
 
-/* CHAPTER label */
-.ch{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:700}
+/* Search */
+.search-section { background: var(--cream); padding: 0 0 56px; }
+.search-card {
+  margin-top: -40px; position: relative; z-index: 5;
+  background: #fff; padding: 28px 24px;
+  box-shadow: 0 16px 48px rgba(12,26,36,.1);
+}
+.search-label {
+  font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--gold); font-weight: 700; margin-bottom: 16px;
+}
+.search-grid {
+  display: grid; grid-template-columns: 1.2fr 1.2fr 1fr 1fr auto; gap: 12px;
+}
+.field { border-bottom: 1px solid var(--line); padding: 6px 0; }
+.field label {
+  display: block; font-size: 10px; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--muted); font-weight: 600; margin-bottom: 4px;
+}
+.field input, .field select {
+  width: 100%; border: 0; background: transparent;
+  font-size: 14px; font-weight: 600; color: #1c2730;
+  outline: none; font-family: var(--sans);
+}
+.search-submit {
+  background: var(--navy); color: #fff; border: 0;
+  padding: 0 24px; font-size: 12px; font-weight: 700;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  cursor: pointer; font-family: var(--sans); min-height: 48px;
+}
+.search-note { margin-top: 12px; font-size: 13px; color: var(--muted); }
+.search-note a { font-weight: 600; color: var(--navy); border-bottom: 1px solid var(--gold); }
 
-/* PORT OF SPAIN — large editorial overlap */
-.pos{display:grid;grid-template-columns:1.3fr 1fr;min-height:620px}
-.pos-img{position:relative;overflow:hidden}
-.pos-img img{width:100%;height:100%;object-fit:cover;min-height:620px}
-.pos-txt{display:flex;flex-direction:column;justify-content:center;padding:48px 10%;background:var(--sand)}
-.pos-txt h2{font-family:var(--serif);font-size:clamp(28px,3.5vw,42px);font-weight:400;color:var(--ink);margin:10px 0 14px;line-height:1.15}
-.pos-txt p{font-size:14px;color:var(--mute);margin-bottom:12px;max-width:340px}
-.loc-lab{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--sea);font-weight:700;margin-bottom:8px}
+/* Sections */
+section { padding: 72px 0; }
+.section-title {
+  font-family: var(--serif); font-size: clamp(26px, 3.4vw, 36px);
+  font-weight: 500; color: var(--navy); margin: 8px 0 12px; line-height: 1.2;
+}
+.section-text { font-size: 15px; color: var(--muted); max-width: 520px; line-height: 1.75; }
 
-/* MARACAS BAY — full bleed stop-and-stare */
-.maracas{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff}
-.maracas img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.maracas::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 40%,rgba(11,26,31,.75))}
-.maracas-in{position:relative;z-index:2;padding:0 0 64px;width:min(var(--max),calc(100% - 32px));margin:0 auto}
-.maracas-in h2{font-family:var(--serif);font-size:clamp(42px,7vw,80px);font-weight:400;line-height:1;margin:8px 0 12px;letter-spacing:-.02em}
-.maracas-in p{font-size:14px;color:rgba(255,255,255,.75);max-width:360px}
+/* Intro split */
+.intro-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center;
+}
+.intro-grid img {
+  width: 100%; aspect-ratio: 4/3; object-fit: cover;
+}
+.intro-grid p { margin-bottom: 12px; }
 
-/* COAST asymmetric gallery */
-.coast{padding:80px 0;background:#fff}
-.coast h2{font-family:var(--serif);font-size:clamp(26px,3.2vw,36px);font-weight:400;color:var(--ink);margin:8px 0 28px}
-.coast-g{display:grid;grid-template-columns:1.7fr 1fr;grid-template-rows:280px 200px;gap:12px}
-.coast-g figure{position:relative;overflow:hidden;margin:0}
-.coast-g img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s ease}
-.coast-g figure:hover img{transform:scale(1.04)}
-.coast-g .huge{grid-row:1/3}
-.coast-g figcaption{position:absolute;bottom:12px;left:12px;font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:#fff;background:rgba(11,26,31,.55);padding:5px 10px}
+/* Port of Spain */
+.pos-block {
+  display: grid; grid-template-columns: 1.2fr 1fr; min-height: 480px;
+}
+.pos-image { overflow: hidden; }
+.pos-image img { width: 100%; height: 100%; object-fit: cover; min-height: 480px; }
+.pos-copy {
+  display: flex; flex-direction: column; justify-content: center;
+  padding: 48px 8%; background: var(--cream);
+}
+.pos-copy p { margin-bottom: 12px; color: var(--muted); font-size: 15px; }
 
-/* NORTHERN RANGE — dramatic full */
-.range{position:relative;min-height:80vh;display:flex;align-items:center;color:#fff}
-.range img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.range::after{content:"";position:absolute;inset:0;background:rgba(11,26,31,.45)}
-.range-in{position:relative;z-index:2;width:min(var(--max),calc(100% - 32px));margin:0 auto;max-width:520px}
-.range-in h2{font-family:var(--serif);font-size:clamp(32px,4.5vw,52px);font-weight:400;line-height:1.1;margin:10px 0 14px}
-.range-in p{font-size:15px;color:rgba(255,255,255,.8);margin-bottom:20px}
+/* Gallery */
+.gallery-grid {
+  display: grid; grid-template-columns: 1.5fr 1fr; grid-template-rows: 240px 200px; gap: 12px;
+}
+.gallery-grid img { width: 100%; height: 100%; object-fit: cover; }
+.gallery-grid .tall { grid-row: 1 / 3; }
 
-/* FROM ABOVE */
-.above{position:relative;min-height:70vh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
-.above img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.above::after{content:"";position:absolute;inset:0;background:rgba(11,26,31,.4)}
-.above-in{position:relative;z-index:2;padding:40px}
-.above-in h2{font-family:var(--serif);font-size:clamp(36px,5.5vw,64px);font-weight:400;line-height:1.05}
+/* UK cities */
+.uk-list { margin-top: 32px; }
+.uk-row {
+  display: grid; grid-template-columns: 140px 1fr auto;
+  gap: 16px; align-items: center;
+  padding: 18px 0; border-bottom: 1px solid var(--line);
+}
+.uk-row:first-child { border-top: 1px solid var(--line); }
+.uk-city { font-family: var(--serif); font-size: 20px; color: var(--navy); }
+.uk-info { font-size: 14px; color: var(--muted); }
+.uk-row a {
+  font-size: 12px; font-weight: 700; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--navy);
+  border-bottom: 1px solid var(--gold); padding-bottom: 2px;
+}
 
-/* UK DEPARTURES — after Trinidad established */
-.uk{padding:90px 0;background:var(--sand)}
-.uk h2{font-family:var(--serif);font-size:clamp(28px,3.5vw,40px);font-weight:400;color:var(--ink);margin:8px 0 12px}
-.uk-p{font-size:14px;color:var(--mute);max-width:480px;margin-bottom:40px}
-.uk-list{display:flex;flex-direction:column;gap:0}
-.uk-row{display:grid;grid-template-columns:120px 1fr auto;gap:20px;align-items:center;padding:22px 0;border-bottom:1px solid rgba(0,0,0,.08)}
-.uk-row:first-child{border-top:1px solid rgba(0,0,0,.08)}
-.uk-row .city{font-family:var(--serif);font-size:22px;color:var(--ink)}
-.uk-row .info{font-size:13px;color:var(--mute)}
-.uk-row a{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);border-bottom:1px solid var(--gold);padding-bottom:2px}
+/* Business Class */
+.bc-section { background: var(--navy); color: #fff; }
+.bc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+.bc-grid img { width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+.bc-section .section-title { color: #fff; }
+.bc-section .section-text { color: rgba(255,255,255,.65); }
+.bc-list { list-style: none; margin: 20px 0 24px; }
+.bc-list li {
+  font-size: 14px; padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+  color: rgba(255,255,255,.8);
+}
+.bc-list li::before { content: "— "; color: var(--gold); }
 
-/* JOURNEY thin */
-.journey{background:var(--ink);color:#fff;padding:60px 0;text-align:center}
-.j-flow{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:6px;margin-top:28px;font-size:12px;font-weight:600;letter-spacing:.06em}
-.j-flow .sep{width:32px;height:1px;background:var(--gold);margin:0 4px}
+/* Deals */
+.deals-feature {
+  background: var(--navy); color: #fff; padding: 36px;
+  display: flex; justify-content: space-between; align-items: center;
+  gap: 24px; flex-wrap: wrap; margin-bottom: 16px;
+}
+.deals-feature h3 {
+  font-family: var(--serif); font-size: 24px; font-weight: 500; margin: 6px 0 8px;
+}
+.deals-feature p { font-size: 14px; color: rgba(255,255,255,.65); }
+.deals-rows { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.deal-item {
+  padding: 24px; background: var(--cream); border-left: 2px solid var(--gold);
+}
+.deal-item h3 { font-family: var(--serif); font-size: 18px; margin: 0 0 6px; }
+.deal-item p { font-size: 13px; color: var(--muted); margin-bottom: 12px; }
+.deal-item a {
+  font-size: 12px; font-weight: 700; letter-spacing: 0.06em;
+  text-transform: uppercase; border-bottom: 1px solid var(--gold);
+}
 
-/* PIARCO arrival */
-.piarco{display:grid;grid-template-columns:1fr 1.1fr;min-height:480px}
-.piarco-txt{display:flex;flex-direction:column;justify-content:center;padding:48px 10%;background:var(--deep);color:#fff}
-.piarco-txt h2{font-family:var(--serif);font-size:clamp(26px,3vw,36px);font-weight:400;margin:10px 0 12px}
-.piarco-txt p{font-size:14px;color:rgba(255,255,255,.65);margin-bottom:16px;max-width:340px}
-.pos-code{font-family:var(--serif);font-size:48px;color:var(--gold);line-height:1}
-.piarco-img{overflow:hidden}
-.piarco-img img{width:100%;height:100%;object-fit:cover;min-height:480px}
-
-/* BUSINESS CLASS — one cabin, dark */
-.bc{padding:90px 0;background:var(--ink);color:#fff}
-.bc-g{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
-.bc-g img{width:100%;aspect-ratio:4/3;object-fit:cover}
-.bc-g h2{font-family:var(--serif);font-size:clamp(26px,3.2vw,38px);font-weight:400;margin:10px 0 14px}
-.bc-g p{font-size:14px;color:rgba(255,255,255,.6);margin-bottom:12px}
-.bc-g ul{list-style:none;margin:16px 0 24px}
-.bc-g li{font-size:13px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.08);color:rgba(255,255,255,.75)}
-.bc-g li::before{content:"—  ";color:var(--gold)}
-
-/* QUOTE panel */
-.quote{padding:70px 0;background:var(--sand)}
-.quote-box{background:#fff;padding:36px;box-shadow:0 16px 48px rgba(11,26,31,.08)}
-.quote-box .lab{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:16px}
-.qg{display:grid;grid-template-columns:1.1fr 1.1fr 1fr 1fr auto;gap:12px}
-.qf{border-bottom:1px solid #e8e4dc;padding:6px 0}
-.qf label{display:block;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);font-weight:600;margin-bottom:3px}
-.qf input,.qf select{width:100%;border:0;background:0;font-size:13px;font-weight:600;outline:0;font-family:var(--sans)}
-.qgo{background:var(--ink);color:#fff;border:0;padding:0 22px;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;font-family:var(--sans);min-height:48px}
-.qnote{margin-top:12px;font-size:12px;color:var(--mute)}
-.qnote a{font-weight:600;border-bottom:1px solid var(--gold)}
-
-/* DEALS editorial */
-.deals{padding:70px 0}
-.deals h2{font-family:var(--serif);font-size:clamp(26px,3vw,36px);font-weight:400;margin:8px 0 24px}
-.d-feat{background:var(--ink);color:#fff;padding:40px;margin-bottom:16px;display:grid;grid-template-columns:1.4fr auto;gap:24px;align-items:center}
-.d-feat h3{font-family:var(--serif);font-size:28px;font-weight:400;margin:6px 0 10px}
-.d-feat p{font-size:14px;color:rgba(255,255,255,.6)}
-.d-rows{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.dr{padding:22px;background:var(--sand);border-left:2px solid var(--gold)}
-.dr h3{font-family:var(--serif);font-size:20px;margin:0 0 6px}
-.dr p{font-size:13px;color:var(--mute);margin-bottom:10px}
-.dr a{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--gold)}
-
-/* MORE dest */
-.more{padding:50px 0;background:var(--sand)}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
-.chip{padding:10px 14px;background:#fff;border:1px solid #e5e0d6;font-size:12px;font-weight:600}
-.chip:hover{border-color:var(--gold)}
+/* Why */
+.why-section { background: var(--cream); }
+.why-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 28px; }
+.why-item h3 {
+  font-family: var(--serif); font-size: 18px; color: var(--navy); margin-bottom: 8px;
+}
+.why-item p { font-size: 14px; color: var(--muted); }
 
 /* FAQ */
-.faq{padding:70px 0}
-.faq h2{font-family:var(--serif);font-size:28px;font-weight:400;margin:8px 0 28px}
-.fi{border-top:1px solid #e8e4dc}
-.fi:last-child{border-bottom:1px solid #e8e4dc}
-.fq{width:100%;text-align:left;background:0;border:0;padding:16px 0;font-family:var(--sans);font-size:14px;font-weight:600;cursor:pointer;display:flex;justify-content:space-between;gap:12px}
-.fq span{color:var(--gold);font-size:18px}
-.fa{max-height:0;overflow:hidden;opacity:0;font-size:13px;color:var(--mute);transition:.35s;padding:0 28px 0 0}
-.fi.open .fa{max-height:160px;opacity:1;padding-bottom:14px}
-
-/* FINAL CTA Trinidad image */
-.final{position:relative;min-height:48vh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
-.final img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.final::after{content:"";position:absolute;inset:0;background:rgba(11,26,31,.55)}
-.final-in{position:relative;z-index:2;padding:48px 20px}
-.final-in h2{font-family:var(--serif);font-size:clamp(26px,4vw,44px);font-weight:400;margin:10px 0 12px}
-.final-in p{font-size:13px;color:rgba(255,255,255,.7);margin-bottom:20px;letter-spacing:.04em}
-
-footer{background:#071215;color:rgba(255,255,255,.45);padding:48px 0 18px}
-.fg{display:grid;grid-template-columns:1.3fr 1fr 1fr 1.1fr;gap:24px}
-footer h4{color:#fff;font-size:10px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:12px}
-footer a{display:block;font-size:13px;margin:5px 0}footer a:hover{color:var(--gold)}
-footer p{font-size:13px;line-height:1.6}
-.atol{display:inline-block;margin-top:10px;padding:4px 8px;border:1px solid rgba(196,163,90,.35);color:var(--gold);font-size:10px;font-weight:700;letter-spacing:.08em}
-.legal{border-top:1px solid rgba(255,255,255,.06);margin-top:28px;padding-top:12px;font-size:11px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
-
-.rv{opacity:0;transform:translateY(18px);transition:opacity .65s,transform .65s}
-.rv.on{opacity:1;transform:none}
-
-@media(max-width:960px){
-.nav-l,.nav-r .ph{display:none}.ham{display:block}
-.pos,.bc-g,.piarco,.d-rows,.d-feat,.fg,.coast-g{grid-template-columns:1fr}
-.coast-g .huge{grid-row:auto}
-.qg{grid-template-columns:1fr 1fr}.qgo{grid-column:1/-1}
-.pos-img img,.piarco-img img{min-height:280px}
-.uk-row{grid-template-columns:1fr}
+.faq-list { max-width: 680px; margin-top: 28px; }
+.faq-item { border-top: 1px solid var(--line); }
+.faq-item:last-child { border-bottom: 1px solid var(--line); }
+.faq-q {
+  width: 100%; text-align: left; background: none; border: 0;
+  padding: 18px 0; font-family: var(--sans); font-size: 15px;
+  font-weight: 600; color: var(--navy); cursor: pointer;
+  display: flex; justify-content: space-between; gap: 12px;
 }
-@media(max-width:560px){
-.qg,.fg{grid-template-columns:1fr}
-.maracas,.range,.above,.hero{min-height:75vh}
+.faq-q span { color: var(--gold); font-size: 18px; }
+.faq-a {
+  max-height: 0; overflow: hidden; opacity: 0;
+  font-size: 14px; color: var(--muted);
+  transition: max-height .35s, opacity .3s, padding .3s;
+  padding: 0 32px 0 0;
 }
-@media(prefers-reduced-motion:reduce){
-.hero-img{animation:none}.rv{opacity:1;transform:none;transition:none}
+.faq-item.open .faq-a { max-height: 160px; opacity: 1; padding-bottom: 16px; }
+
+/* Final CTA */
+.final-cta {
+  position: relative; min-height: 42vh;
+  display: flex; align-items: center; justify-content: center;
+  text-align: center; color: #fff;
+}
+.final-cta img {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+}
+.final-cta::after {
+  content: ""; position: absolute; inset: 0; background: rgba(12,26,36,.55);
+}
+.final-inner { position: relative; z-index: 2; padding: 48px 20px; }
+.final-inner h2 {
+  font-family: var(--serif); font-size: clamp(26px, 3.8vw, 40px);
+  font-weight: 500; margin: 10px 0 12px;
+}
+.final-inner p { font-size: 14px; color: rgba(255,255,255,.75); margin-bottom: 24px; }
+
+/* Footer */
+footer { background: #08141c; color: rgba(255,255,255,.5); padding: 48px 0 20px; }
+.footer-grid {
+  display: grid; grid-template-columns: 1.3fr 1fr 1fr 1.1fr; gap: 28px;
+}
+footer h4 {
+  color: #fff; font-size: 11px; letter-spacing: 0.12em;
+  text-transform: uppercase; margin-bottom: 14px; font-weight: 700;
+}
+footer a { display: block; font-size: 13px; margin: 6px 0; }
+footer a:hover { color: var(--gold); }
+footer p { font-size: 13px; line-height: 1.65; }
+.atol {
+  display: inline-block; margin-top: 12px; padding: 4px 8px;
+  border: 1px solid rgba(196,163,90,.4); color: var(--gold);
+  font-size: 10px; font-weight: 700; letter-spacing: 0.06em;
+}
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,.08); margin-top: 32px;
+  padding-top: 14px; font-size: 12px;
+  display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
+}
+
+/* Reveal */
+.reveal {
+  opacity: 0; transform: translateY(16px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+.reveal.visible { opacity: 1; transform: none; }
+
+@media (max-width: 900px) {
+  .nav-desktop, .header-phone { display: none; }
+  .menu-toggle { display: block; }
+  .intro-grid, .pos-block, .bc-grid, .deals-rows, .why-grid, .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .gallery-grid { grid-template-columns: 1fr; grid-template-rows: auto; }
+  .gallery-grid .tall { grid-row: auto; }
+  .search-grid { grid-template-columns: 1fr 1fr; }
+  .search-submit { grid-column: 1 / -1; min-height: 48px; }
+  .uk-row { grid-template-columns: 1fr; gap: 8px; }
+  .pos-image img { min-height: 280px; }
+  .deals-feature { flex-direction: column; align-items: flex-start; }
+}
+@media (max-width: 520px) {
+  .search-grid, .footer-grid, .why-grid { grid-template-columns: 1fr; }
+  section { padding: 56px 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
 }
 </style>
 <script type="application/ld+json">
@@ -232,375 +355,398 @@ footer p{font-size:13px;line-height:1.6}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"What are the best Business Class flight options to Trinidad from the UK?","acceptedAnswer":{"@type":"Answer","text":"Business Class availability depends on airline and travel dates. Galaxy Fly can review options from London, Manchester and other UK airports when you request a quote."}},
+{"@type":"Question","name":"What are the best Business Class flight options to Trinidad from the UK?","acceptedAnswer":{"@type":"Answer","text":"Business Class availability depends on the airline and travel dates. Galaxy Fly can review options from London, Manchester and other UK airports when you request a quote."}},
 {"@type":"Question","name":"Which UK airports can I use to travel to Trinidad?","acceptedAnswer":{"@type":"Answer","text":"Travellers commonly search from London Heathrow and Gatwick, Manchester, Birmingham, Edinburgh and Glasgow."}},
 {"@type":"Question","name":"Can I fly from London to Port of Spain?","acceptedAnswer":{"@type":"Answer","text":"Yes. London to Port of Spain is a frequent request. Contact Galaxy Fly to check itineraries and cabin options."}},
 {"@type":"Question","name":"What airport do flights from the UK use for Trinidad?","acceptedAnswer":{"@type":"Answer","text":"Most UK long-haul arrivals land at Piarco International Airport (POS), serving Port of Spain."}},
-{"@type":"Question","name":"What is Piarco International Airport?","acceptedAnswer":{"@type":"Answer","text":"Piarco (POS) is Trinidad's main international airport and the usual entry point for flights from the United Kingdom."}},
 {"@type":"Question","name":"Can I request a Trinidad Business Class quote?","acceptedAnswer":{"@type":"Answer","text":"Yes. Call 0208 178 4401 or use the contact form with your preferred dates and cabin."}}
 ]}
 </script>
 </head>
 <body>
 
-<header class="nav" id="nav">
-<div class="w nav-in">
-<a class="logo" href="https://galaxyfly.co.uk/"><b>G</b> GALAXY FLY</a>
-<nav class="nav-l">
-<div class="dd"><button type="button">Destinations</button>
-<div class="dd-m">
-<a href="https://galaxyfly.co.uk/destination/Caribbean">Caribbean</a>
-<a href="https://galaxyfly.co.uk/destination/USA">USA</a>
-<a href="https://galaxyfly.co.uk/destination/Dubai">Dubai</a>
-<a href="https://galaxyfly.co.uk/destination/Europe">Europe</a>
-<a href="https://galaxyfly.co.uk/destination/Asia">Asia</a>
-<a href="https://galaxyfly.co.uk/destination/Africa">Africa</a>
-<a href="https://galaxyfly.co.uk/destination/Canada">Canada</a>
-<a href="https://galaxyfly.co.uk/destination/Australia">Australia</a>
-<a href="https://galaxyfly.co.uk/destination/Mexico">Mexico</a>
-<a href="https://galaxyfly.co.uk/destination/FarEast">Far East</a>
-<a href="https://galaxyfly.co.uk/destination/LatinAmerica">Latin America</a>
-<a href="https://galaxyfly.co.uk/destination/NewZealand">New Zealand</a>
-</div></div>
-<a href="#bc">Business Class</a>
-<a href="https://galaxyfly.co.uk/deals">Deals</a>
-<a href="https://galaxyfly.co.uk/about">About Us</a>
-<a href="https://galaxyfly.co.uk/contact">Contact</a>
-</nav>
-<div class="nav-r">
-<a class="ph" href="tel:02081784401">0208 178 4401</a>
-<a class="btn btn-g" href="https://galaxyfly.co.uk/contact">Get a Flight Quote</a>
-<button class="ham" id="ham" type="button" aria-label="Menu">☰</button>
-</div>
-</div>
+<header class="header" id="header">
+  <div class="wrap header-inner">
+    <a class="logo" href="https://galaxyfly.co.uk/"><span class="logo-mark">G</span> GALAXY FLY</a>
+    <nav class="nav-desktop" aria-label="Main">
+      <div class="dropdown">
+        <button type="button">Destinations</button>
+        <div class="dropdown-menu">
+          <a href="https://galaxyfly.co.uk/destination/Caribbean">Caribbean</a>
+          <a href="https://galaxyfly.co.uk/destination/USA">USA</a>
+          <a href="https://galaxyfly.co.uk/destination/Dubai">Dubai</a>
+          <a href="https://galaxyfly.co.uk/destination/Europe">Europe</a>
+          <a href="https://galaxyfly.co.uk/destination/Asia">Asia</a>
+          <a href="https://galaxyfly.co.uk/destination/Africa">Africa</a>
+          <a href="https://galaxyfly.co.uk/destination/Canada">Canada</a>
+          <a href="https://galaxyfly.co.uk/destination/Australia">Australia</a>
+          <a href="https://galaxyfly.co.uk/destination/Mexico">Mexico</a>
+          <a href="https://galaxyfly.co.uk/destination/FarEast">Far East</a>
+          <a href="https://galaxyfly.co.uk/destination/LatinAmerica">Latin America</a>
+          <a href="https://galaxyfly.co.uk/destination/NewZealand">New Zealand</a>
+        </div>
+      </div>
+      <a href="#business">Business Class</a>
+      <a href="https://galaxyfly.co.uk/deals">Deals</a>
+      <a href="https://galaxyfly.co.uk/about">About</a>
+      <a href="https://galaxyfly.co.uk/contact">Contact</a>
+    </nav>
+    <div class="header-right">
+      <a class="header-phone" href="tel:02081784401">0208 178 4401</a>
+      <a class="btn btn-gold" href="https://galaxyfly.co.uk/contact">Get a Quote</a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open menu">☰</button>
+    </div>
+  </div>
 </header>
 
-<div class="mob" id="mob">
-<button type="button" class="x" id="mx">✕</button>
-<a href="https://galaxyfly.co.uk/destination/Caribbean">Trinidad / Caribbean</a>
-<a href="#bc">Business Class</a>
-<a href="https://galaxyfly.co.uk/deals">Deals</a>
-<a href="https://galaxyfly.co.uk/about">About</a>
-<a href="https://galaxyfly.co.uk/contact">Contact</a>
-<a href="tel:02081784401">0208 178 4401</a>
+<div class="mobile-nav" id="mobile-nav">
+  <button type="button" class="close" id="menu-close" aria-label="Close">✕</button>
+  <a href="https://galaxyfly.co.uk/destination/Caribbean">Trinidad / Caribbean</a>
+  <a href="#business">Business Class</a>
+  <a href="https://galaxyfly.co.uk/deals">Deals</a>
+  <a href="https://galaxyfly.co.uk/about">About</a>
+  <a href="https://galaxyfly.co.uk/contact">Contact</a>
+  <a href="tel:02081784401">0208 178 4401</a>
 </div>
 
 <main>
-<!-- HERO: Trinidad landscape -->
-<section class="hero">
-<div class="hero-img" role="img" aria-label="Trinidad landscape and Caribbean horizon"></div>
-<div class="hero-c">
-<div class="hero-tags">
-<span class="g">Trinidad &amp; Tobago</span>
-<span>Business Class</span>
-<span>Caribbean</span>
-</div>
-<div class="ey">Trinidad &amp; Tobago · Business Class</div>
-<h1>Cheap Business Class Flights to Trinidad from UK</h1>
-<p class="hero-p">Discover Business Class flight options from the UK to Trinidad, with journeys to Port of Spain and Piarco International Airport.</p>
-<div class="hero-btns">
-<a class="btn btn-g" href="https://galaxyfly.co.uk/destination/Caribbean">Explore Trinidad Flights</a>
-<a class="btn btn-o" href="https://galaxyfly.co.uk/contact">Request a Business Class Quote</a>
-</div>
-<div class="route"><span>London</span><span class="dash"></span><span>Trinidad</span></div>
-</div>
-</section>
+  <!-- 1. Hero -->
+  <section class="hero">
+    <div class="hero-bg" role="img" aria-label="Trinidad Caribbean landscape"></div>
+    <div class="hero-content">
+      <p class="eyebrow">Trinidad &amp; Tobago · Business Class</p>
+      <h1>Cheap Business Class Flights to Trinidad from UK</h1>
+      <p class="hero-lead">Discover Business Class flight options from the UK to Trinidad, with journeys to Port of Spain and Piarco International Airport.</p>
+      <div class="hero-actions">
+        <a class="btn btn-gold" href="https://galaxyfly.co.uk/destination/Caribbean">Explore Trinidad Flights</a>
+        <a class="btn btn-outline" href="https://galaxyfly.co.uk/contact">Request a Quote</a>
+      </div>
+    </div>
+  </section>
 
-<!-- PORT OF SPAIN chapter -->
-<section class="pos" id="port-of-spain">
-<div class="pos-img">
-<img src="tt-tropic.jpg" alt="Port of Spain region Trinidad tropical setting" width="900" height="620" loading="lazy">
-</div>
-<div class="pos-txt">
-<div class="loc-lab rv">Port of Spain · Trinidad</div>
-<div class="ch rv">Chapter 01</div>
-<h2 class="rv">Arrive in Port of Spain</h2>
-<p class="rv">Port of Spain is the capital gateway for most travellers flying from the United Kingdom. After landing at Piarco, the city opens the door to Trinidad’s commercial heart and onward island travel.</p>
-<p class="rv">Whether you are visiting family or combining business with the Caribbean, this is where your Trinidad journey becomes real.</p>
-<a class="btn btn-d rv" href="https://galaxyfly.co.uk/contact">Plan Port of Spain Travel</a>
-</div>
-</section>
+  <!-- 2. Search / Quote -->
+  <div class="search-section">
+    <div class="wrap">
+      <div class="search-card">
+        <div class="search-label">Flight enquiry</div>
+        <form id="search-form">
+          <div class="search-grid">
+            <div class="field">
+              <label for="from">From</label>
+              <input id="from" name="from" type="text" value="London, UK" required>
+            </div>
+            <div class="field">
+              <label for="to">To</label>
+              <input id="to" name="to" type="text" value="Trinidad / POS" required>
+            </div>
+            <div class="field">
+              <label for="depart">Departure</label>
+              <input id="depart" name="depart" type="date" required>
+            </div>
+            <div class="field">
+              <label for="return">Return</label>
+              <input id="return" name="return" type="date">
+            </div>
+            <button type="submit" class="search-submit">Search Flights</button>
+          </div>
+        </form>
+        <p class="search-note">Request a personal quote · <a href="tel:02081784401">0208 178 4401</a> · <a href="https://galaxyfly.co.uk/contact">Contact form</a></p>
+      </div>
+    </div>
+  </div>
 
-<!-- MARACAS BAY — visual peak -->
-<section class="maracas" id="maracas">
-<img src="tt-bay.jpg" alt="Caribbean bay and coastline Trinidad" width="1600" height="1000" loading="lazy">
-<div class="maracas-in">
-<div class="ch rv">Chapter 02</div>
-<h2 class="rv">Maracas Bay</h2>
-<p class="rv">Trinidad’s celebrated north-coast bay — where Caribbean water meets mountain backdrop. A reason many travellers choose the island beyond the flight alone.</p>
-</div>
-</section>
+  <!-- 3. Trinidad intro -->
+  <section>
+    <div class="wrap intro-grid">
+      <div class="reveal">
+        <p class="eyebrow">The destination</p>
+        <h2 class="section-title">Trinidad, your Caribbean arrival</h2>
+        <p class="section-text">Trinidad is the southern gateway of the Caribbean. UK travellers fly in for family visits, business and island stays — landing at Piarco International Airport before continuing to Port of Spain.</p>
+        <p class="section-text">Galaxy Fly helps you explore Business Class and economy options from London, Manchester, Birmingham and Scotland.</p>
+        <a class="btn btn-navy" href="https://galaxyfly.co.uk/destination/Caribbean" style="margin-top:8px">View Caribbean options</a>
+      </div>
+      <img class="reveal" src="tt-bay.jpg" alt="Trinidad Caribbean coastline" width="600" height="450" loading="lazy">
+    </div>
+  </section>
 
-<!-- COAST gallery -->
-<section class="coast" id="coast">
-<div class="w">
-<div class="ch rv">Chapter 03</div>
-<h2 class="rv">The Caribbean coast</h2>
-<div class="coast-g">
-<figure class="huge rv">
-<img src="tt-vista.jpg" alt="Trinidad coastal vista and sea" width="800" height="500" loading="lazy">
-<figcaption>Trinidad’s natural beauty</figcaption>
-</figure>
-<figure class="rv">
-<img src="tt-green.jpg" alt="Lush tropical greenery Trinidad" width="500" height="280" loading="lazy">
-<figcaption>Tropical landscape</figcaption>
-</figure>
-<figure class="rv">
-<img src="tt-bay.jpg" alt="Caribbean shoreline Trinidad" width="500" height="200" loading="lazy">
-<figcaption>The Caribbean coast</figcaption>
-</figure>
-</div>
-</div>
-</section>
+  <!-- 4. Port of Spain -->
+  <section class="pos-block" id="port-of-spain" style="padding:0">
+    <div class="pos-image">
+      <img src="tt-tropic.jpg" alt="Port of Spain region Trinidad" width="800" height="480" loading="lazy">
+    </div>
+    <div class="pos-copy">
+      <p class="eyebrow reveal">Port of Spain</p>
+      <h2 class="section-title reveal">Arrive in Port of Spain</h2>
+      <p class="reveal">Port of Spain is Trinidad’s capital and the city most UK passengers head toward after landing at Piarco. It is the commercial and cultural centre of the island.</p>
+      <p class="reveal">From here you can plan onward travel across Trinidad or simply settle into your stay.</p>
+      <a class="btn btn-navy reveal" href="https://galaxyfly.co.uk/contact">Plan your arrival</a>
+    </div>
+  </section>
 
-<!-- NORTHERN RANGE -->
-<section class="range" id="northern-range">
-<img src="tt-range.jpg" alt="Mountain and rainforest landscape Northern Range Trinidad" width="1600" height="900" loading="lazy">
-<div class="range-in">
-<div class="ch rv">Chapter 04</div>
-<h2 class="rv">Beyond Port of Spain</h2>
-<p class="rv">The Northern Range rises above the capital — rainforest, ridgelines and a different face of Trinidad. The island is more than its shoreline.</p>
-<a class="btn btn-g rv" href="https://galaxyfly.co.uk/destination/Caribbean">Explore Caribbean Destinations</a>
-</div>
-</section>
+  <!-- 5. Gallery -->
+  <section>
+    <div class="wrap">
+      <p class="eyebrow reveal">Trinidad</p>
+      <h2 class="section-title reveal">Coast, landscape and light</h2>
+      <p class="section-text reveal" style="margin-bottom:28px">A glimpse of the island beyond the airport — coastline, tropical landscape and Caribbean atmosphere.</p>
+      <div class="gallery-grid">
+        <img class="tall reveal" src="tt-vista.jpg" alt="Trinidad landscape vista" width="600" height="450" loading="lazy">
+        <img class="reveal" src="tt-green.jpg" alt="Tropical greenery Trinidad" width="400" height="240" loading="lazy">
+        <img class="reveal" src="tt-bay.jpg" alt="Caribbean bay Trinidad" width="400" height="200" loading="lazy">
+      </div>
+    </div>
+  </section>
 
-<!-- FROM ABOVE -->
-<section class="above">
-<img src="tt-green.jpg" alt="Elevated Trinidad landscape view" width="1600" height="800" loading="lazy">
-<div class="above-in">
-<div class="ch rv">Chapter 05</div>
-<h2 class="rv">See Trinidad<br>from above</h2>
-</div>
-</section>
+  <!-- 6. UK cities -->
+  <section style="background:var(--cream)">
+    <div class="wrap">
+      <p class="eyebrow reveal">UK departures</p>
+      <h2 class="section-title reveal">From the UK to Trinidad</h2>
+      <p class="section-text reveal">Request Business Class or economy availability from your preferred UK city.</p>
+      <div class="uk-list">
+        <div class="uk-row reveal">
+          <span class="uk-city">London</span>
+          <span class="uk-info">Heathrow &amp; Gatwick · Business Class to Trinidad</span>
+          <a href="https://galaxyfly.co.uk/contact">Get a quote</a>
+        </div>
+        <div class="uk-row reveal">
+          <span class="uk-city">Manchester</span>
+          <span class="uk-info">North West · Port of Spain itineraries</span>
+          <a href="https://galaxyfly.co.uk/contact">Get a quote</a>
+        </div>
+        <div class="uk-row reveal">
+          <span class="uk-city">Birmingham</span>
+          <span class="uk-info">Midlands · Long-haul Trinidad options</span>
+          <a href="https://galaxyfly.co.uk/contact">Get a quote</a>
+        </div>
+        <div class="uk-row reveal">
+          <span class="uk-city">Edinburgh</span>
+          <span class="uk-info">Scotland · Caribbean connections</span>
+          <a href="https://galaxyfly.co.uk/contact">Get a quote</a>
+        </div>
+        <div class="uk-row reveal">
+          <span class="uk-city">Glasgow</span>
+          <span class="uk-info">GLA · Trinidad &amp; Port of Spain</span>
+          <a href="https://galaxyfly.co.uk/contact">Get a quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- UK DEPARTURES — only after Trinidad established -->
-<section class="uk" id="uk">
-<div class="w">
-<div class="ch rv">From the United Kingdom</div>
-<h2 class="rv">From the UK to Trinidad</h2>
-<p class="uk-p rv">Business Class and economy options from major UK cities toward Port of Spain and Piarco International Airport.</p>
-<div class="uk-list">
-<div class="uk-row rv">
-<span class="city">London</span>
-<span class="info">Heathrow &amp; Gatwick · Business Class enquiries to Trinidad</span>
-<a href="https://galaxyfly.co.uk/contact">Request quote</a>
-</div>
-<div class="uk-row rv">
-<span class="city">Manchester</span>
-<span class="info">North West departures · Port of Spain itineraries</span>
-<a href="https://galaxyfly.co.uk/contact">Request quote</a>
-</div>
-<div class="uk-row rv">
-<span class="city">Birmingham</span>
-<span class="info">Midlands long-haul · Trinidad flight options</span>
-<a href="https://galaxyfly.co.uk/contact">Request quote</a>
-</div>
-<div class="uk-row rv">
-<span class="city">Edinburgh</span>
-<span class="info">Scotland · Caribbean connections</span>
-<a href="https://galaxyfly.co.uk/contact">Request quote</a>
-</div>
-<div class="uk-row rv">
-<span class="city">Glasgow</span>
-<span class="info">GLA · Trinidad &amp; Port of Spain enquiries</span>
-<a href="https://galaxyfly.co.uk/contact">Request quote</a>
-</div>
-</div>
-</div>
-</section>
+  <!-- 7. Business Class -->
+  <section class="bc-section" id="business">
+    <div class="wrap bc-grid">
+      <img class="reveal" src="av-seat.jpg" alt="Business Class cabin for Trinidad flights" width="560" height="420" loading="lazy">
+      <div class="reveal">
+        <p class="eyebrow">Premium cabin</p>
+        <h2 class="section-title">Travel to Trinidad in Business Class</h2>
+        <p class="section-text">Greater comfort on the UK to Trinidad sector — where the operating airline offers premium seats for your dates.</p>
+        <ul class="bc-list">
+          <li>More space on selected long-haul aircraft</li>
+          <li>Priority services where included in your fare</li>
+          <li>Enhanced onboard experience depending on airline</li>
+          <li>Baggage benefits by ticket type</li>
+        </ul>
+        <a class="btn btn-gold" href="https://galaxyfly.co.uk/contact">Check availability</a>
+      </div>
+    </div>
+  </section>
 
-<!-- JOURNEY LINE -->
-<section class="journey">
-<div class="w">
-<div class="ch rv" style="color:var(--gold)">The journey</div>
-<div class="j-flow rv">
-<span>UK</span><span class="sep"></span>
-<span>Business Class</span><span class="sep"></span>
-<span>Trinidad</span><span class="sep"></span>
-<span>Piarco POS</span><span class="sep"></span>
-<span>Port of Spain</span>
-</div>
-</div>
-</section>
+  <!-- 8. Deals -->
+  <section>
+    <div class="wrap">
+      <p class="eyebrow reveal">Flight options</p>
+      <h2 class="section-title reveal">Trinidad flight deals</h2>
+      <p class="section-text reveal" style="margin-bottom:24px">No invented prices. Request current availability for your dates.</p>
+      <div class="deals-feature reveal">
+        <div>
+          <p class="eyebrow">Featured</p>
+          <h3>UK → Trinidad · Business Class</h3>
+          <p>Premium and economy enquiries from major UK airports to Port of Spain.</p>
+        </div>
+        <a class="btn btn-gold" href="https://galaxyfly.co.uk/contact">Request a quote</a>
+      </div>
+      <div class="deals-rows">
+        <div class="deal-item reveal">
+          <h3>London</h3>
+          <p>Heathrow &amp; Gatwick options to POS.</p>
+          <a href="https://galaxyfly.co.uk/contact">Explore options</a>
+        </div>
+        <div class="deal-item reveal">
+          <h3>Manchester</h3>
+          <p>North West departures to Port of Spain.</p>
+          <a href="https://galaxyfly.co.uk/contact">Explore options</a>
+        </div>
+        <div class="deal-item reveal">
+          <h3>Birmingham</h3>
+          <p>Midlands Trinidad enquiries.</p>
+          <a href="https://galaxyfly.co.uk/contact">Explore options</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- PIARCO -->
-<section class="piarco" id="piarco">
-<div class="piarco-txt">
-<div class="pos-code rv">POS</div>
-<div class="ch rv">Arrival</div>
-<h2 class="rv">Your arrival in Trinidad</h2>
-<p class="rv">Piarco International Airport is the main long-haul gateway. From the aircraft door to Port of Spain, this is where the flight ends and Trinidad begins.</p>
-<a class="btn btn-g rv" href="https://galaxyfly.co.uk/contact">Enquire UK to POS</a>
-</div>
-<div class="piarco-img">
-<img src="tt-tropic.jpg" alt="Arrival atmosphere Trinidad after Piarco" width="700" height="480" loading="lazy">
-</div>
-</section>
+  <!-- 9. Why Galaxy Fly -->
+  <section class="why-section">
+    <div class="wrap">
+      <p class="eyebrow reveal">Why Galaxy Fly</p>
+      <h2 class="section-title reveal">A UK agency for Trinidad travel</h2>
+      <div class="why-grid">
+        <div class="why-item reveal">
+          <h3>ATOL protected</h3>
+          <p>Galaxy Travel Ltd · Licence 11858 for qualifying bookings.</p>
+        </div>
+        <div class="why-item reveal">
+          <h3>UK-based team</h3>
+          <p>Based in Berkshire, handling Trinidad and Caribbean enquiries.</p>
+        </div>
+        <div class="why-item reveal">
+          <h3>Cabin choice</h3>
+          <p>Economy to Business Class where airlines release seats.</p>
+        </div>
+        <div class="why-item reveal">
+          <h3>Direct contact</h3>
+          <p>Call 0208 178 4401 or request a personal quote online.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- BUSINESS CLASS — one cabin image -->
-<section class="bc" id="bc">
-<div class="w bc-g">
-<img class="rv" src="av-seat.jpg" alt="Business Class cabin seating for Trinidad long-haul" width="600" height="450" loading="lazy">
-<div class="rv">
-<div class="ch">Premium cabin</div>
-<h2>Travel to Trinidad in Business Class</h2>
-<p>Greater comfort on the UK to Trinidad sector — where the operating airline offers premium inventory for your dates.</p>
-<ul>
-<li>More space on selected long-haul aircraft</li>
-<li>Priority services where included in your fare</li>
-<li>Enhanced onboard experience depending on airline</li>
-<li>Applicable baggage benefits by ticket type</li>
-</ul>
-<a class="btn btn-g" href="https://galaxyfly.co.uk/contact">Check Business Class Availability</a>
-</div>
-</div>
-</section>
+  <!-- 10. FAQ -->
+  <section>
+    <div class="wrap">
+      <p class="eyebrow reveal">Questions</p>
+      <h2 class="section-title reveal">Trinidad flight FAQs</h2>
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <button type="button" class="faq-q">What are the best Business Class flight options to Trinidad from the UK?<span>+</span></button>
+          <div class="faq-a">Availability changes by airline and date. Request a quote for current Business Class inventory from London, Manchester and other UK airports.</div>
+        </div>
+        <div class="faq-item reveal">
+          <button type="button" class="faq-q">Which UK airports can I use to travel to Trinidad?<span>+</span></button>
+          <div class="faq-a">Common points include London Heathrow and Gatwick, Manchester, Birmingham, Edinburgh and Glasgow.</div>
+        </div>
+        <div class="faq-item reveal">
+          <button type="button" class="faq-q">Can I fly from London to Port of Spain?<span>+</span></button>
+          <div class="faq-a">Yes. London to Port of Spain is frequently requested. Contact us to review itineraries and cabin options.</div>
+        </div>
+        <div class="faq-item reveal">
+          <button type="button" class="faq-q">What airport do flights from the UK use for Trinidad?<span>+</span></button>
+          <div class="faq-a">Most UK long-haul arrivals land at Piarco International Airport (POS), serving Port of Spain.</div>
+        </div>
+        <div class="faq-item reveal">
+          <button type="button" class="faq-q">Can I request a Trinidad Business Class quote?<span>+</span></button>
+          <div class="faq-a">Yes. Call 0208 178 4401 or use the contact form with your preferred dates and cabin.</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- QUOTE -->
-<section class="quote" id="quote">
-<div class="w">
-<div class="quote-box rv">
-<div class="lab">Trinidad flight enquiry</div>
-<form id="qf">
-<div class="qg">
-<div class="qf"><label for="from">From</label><input id="from" value="London, UK" required></div>
-<div class="qf"><label for="to">To</label><input id="to" value="Trinidad / POS" required></div>
-<div class="qf"><label for="dep">Departure</label><input id="dep" type="date" required></div>
-<div class="qf"><label for="ret">Return</label><input id="ret" type="date"></div>
-<button type="submit" class="qgo">Search Trinidad Flights</button>
-</div>
-</form>
-<p class="qnote">No fake prices — request live availability · <a href="tel:02081784401">0208 178 4401</a> · <a href="https://galaxyfly.co.uk/contact">Contact</a></p>
-</div>
-</div>
-</section>
-
-<!-- DEALS -->
-<section class="deals">
-<div class="w">
-<div class="ch rv">Commercial</div>
-<h2 class="rv">Trinidad flight deals</h2>
-<div class="d-feat rv">
-<div>
-<div class="ch">Featured</div>
-<h3>UK → Trinidad · Business Class</h3>
-<p>Premium cabin and economy enquiries from London, Manchester and other UK airports to Port of Spain.</p>
-</div>
-<a class="btn btn-g" href="https://galaxyfly.co.uk/contact">Request a Trinidad Flight Quote</a>
-</div>
-<div class="d-rows">
-<div class="dr rv"><h3>London</h3><p>LHR &amp; LGW options to POS.</p><a href="https://galaxyfly.co.uk/contact">Explore options</a></div>
-<div class="dr rv"><h3>Manchester</h3><p>North West to Port of Spain.</p><a href="https://galaxyfly.co.uk/contact">Explore options</a></div>
-<div class="dr rv"><h3>Birmingham</h3><p>Midlands Trinidad enquiries.</p><a href="https://galaxyfly.co.uk/contact">Explore options</a></div>
-</div>
-</div>
-</section>
-
-<!-- MORE -->
-<section class="more">
-<div class="w">
-<div class="ch rv">Also available</div>
-<div class="chips rv">
-<a class="chip" href="https://galaxyfly.co.uk/destination/Caribbean">Caribbean</a>
-<a class="chip" href="https://galaxyfly.co.uk/destination/USA">USA</a>
-<a class="chip" href="https://galaxyfly.co.uk/destination/Dubai">Dubai</a>
-<a class="chip" href="https://galaxyfly.co.uk/destination/Europe">Europe</a>
-<a class="chip" href="https://galaxyfly.co.uk/destination/Asia">Asia</a>
-<a class="chip" href="https://galaxyfly.co.uk/destination/Canada">Canada</a>
-<a class="chip" href="https://galaxyfly.co.uk/destination/Africa">Africa</a>
-<a class="chip" href="https://galaxyfly.co.uk/destination/Australia">Australia</a>
-<a class="chip" href="https://galaxyfly.co.uk/deals">All deals</a>
-</div>
-</div>
-</section>
-
-<!-- FAQ -->
-<section class="faq">
-<div class="w">
-<div class="ch rv">Questions</div>
-<h2 class="rv">Trinidad flight FAQs</h2>
-<div class="fi rv"><button type="button" class="fq">What are the best Business Class flight options to Trinidad from the UK?<span>+</span></button><div class="fa">Availability changes by airline and date. Request a quote for current Business Class inventory from London, Manchester and other UK airports.</div></div>
-<div class="fi rv"><button type="button" class="fq">Which UK airports can I use to travel to Trinidad?<span>+</span></button><div class="fa">Common points include London Heathrow and Gatwick, Manchester, Birmingham, Edinburgh and Glasgow.</div></div>
-<div class="fi rv"><button type="button" class="fq">Can I fly from London to Port of Spain?<span>+</span></button><div class="fa">Yes. London to Port of Spain is frequently requested. Contact us to review itineraries and cabins.</div></div>
-<div class="fi rv"><button type="button" class="fq">What airport do flights from the UK use for Trinidad?<span>+</span></button><div class="fa">Most UK long-haul arrivals land at Piarco International Airport (POS).</div></div>
-<div class="fi rv"><button type="button" class="fq">What is Piarco International Airport?<span>+</span></button><div class="fa">Piarco (POS) is Trinidad’s main international airport and the usual entry point from the United Kingdom.</div></div>
-<div class="fi rv"><button type="button" class="fq">Can I request a Trinidad Business Class quote?<span>+</span></button><div class="fa">Yes. Call 0208 178 4401 or use the contact form with dates and cabin preference.</div></div>
-</div>
-</section>
-
-<!-- FINAL CTA -->
-<section class="final">
-<img src="tt-bay.jpg" alt="Trinidad Caribbean journey from the UK" width="1600" height="600" loading="lazy">
-<div class="final-in rv">
-<div class="ch">Book your journey</div>
-<h2>Your Trinidad story starts in the UK</h2>
-<p>London · Manchester · Birmingham · Scotland → Port of Spain</p>
-<a class="btn btn-g" href="https://galaxyfly.co.uk/destination/Caribbean">Find Your Trinidad Flight</a>
-</div>
-</section>
+  <!-- 11. Final CTA -->
+  <section class="final-cta">
+    <img src="tt-bay.jpg" alt="Trinidad journey from the UK" width="1400" height="500" loading="lazy">
+    <div class="final-inner reveal">
+      <p class="eyebrow">Next step</p>
+      <h2>Ready to fly to Trinidad?</h2>
+      <p>London · Manchester · Birmingham · Scotland → Port of Spain</p>
+      <a class="btn btn-gold" href="https://galaxyfly.co.uk/contact">Request a Trinidad Quote</a>
+    </div>
+  </section>
 </main>
 
 <footer>
-<div class="w">
-<div class="fg">
-<div>
-<a class="logo" href="https://galaxyfly.co.uk/" style="margin-bottom:12px"><b>G</b> GALAXY FLY</a>
-<p>Trinidad &amp; Caribbean flight specialists. Operated by Galaxy Travel Ltd.</p>
-<div class="atol">ATOL 11858</div>
-</div>
-<div>
-<h4>Destinations</h4>
-<a href="https://galaxyfly.co.uk/destination/Caribbean">Trinidad / Caribbean</a>
-<a href="https://galaxyfly.co.uk/destination/USA">USA</a>
-<a href="https://galaxyfly.co.uk/destination/Dubai">Dubai</a>
-<a href="https://galaxyfly.co.uk/destination/Europe">Europe</a>
-<a href="https://galaxyfly.co.uk/destination/Asia">Asia</a>
-<a href="https://galaxyfly.co.uk/destination/Africa">Africa</a>
-<a href="https://galaxyfly.co.uk/destination/Canada">Canada</a>
-<a href="https://galaxyfly.co.uk/destination/Australia">Australia</a>
-</div>
-<div>
-<h4>Company</h4>
-<a href="https://galaxyfly.co.uk/">Home</a>
-<a href="https://galaxyfly.co.uk/deals">Deals</a>
-<a href="https://galaxyfly.co.uk/about">About</a>
-<a href="https://galaxyfly.co.uk/contact">Contact</a>
-<a href="https://galaxyfly.co.uk/terms">Terms</a>
-<a href="https://galaxyfly.co.uk/privacy">Privacy</a>
-<a href="https://galaxyfly.co.uk/refund">Refund</a>
-</div>
-<div>
-<h4>Contact</h4>
-<a href="tel:02081784401">0208 178 4401</a>
-<a href="mailto:support@galaxyfly.co.uk">support@galaxyfly.co.uk</a>
-<p style="margin-top:8px">2 Manor House Lane<br>Datchet, Slough<br>Berkshire SL3 9EB</p>
-<p style="font-size:11px;margin-top:6px;opacity:.7">Company No. 12535908</p>
-</div>
-</div>
-<div class="legal">
-<span>© <span id="yr"></span> Galaxy Fly · Galaxy Travel Ltd</span>
-<span>Cheap Business Class flights to Trinidad from UK</span>
-</div>
-</div>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="logo" href="https://galaxyfly.co.uk/" style="margin-bottom:12px"><span class="logo-mark">G</span> GALAXY FLY</a>
+        <p>Trinidad &amp; Caribbean flight specialists. Operated by Galaxy Travel Ltd.</p>
+        <div class="atol">ATOL 11858</div>
+      </div>
+      <div>
+        <h4>Destinations</h4>
+        <a href="https://galaxyfly.co.uk/destination/Caribbean">Trinidad / Caribbean</a>
+        <a href="https://galaxyfly.co.uk/destination/USA">USA</a>
+        <a href="https://galaxyfly.co.uk/destination/Dubai">Dubai</a>
+        <a href="https://galaxyfly.co.uk/destination/Europe">Europe</a>
+        <a href="https://galaxyfly.co.uk/destination/Asia">Asia</a>
+        <a href="https://galaxyfly.co.uk/destination/Canada">Canada</a>
+        <a href="https://galaxyfly.co.uk/destination/Africa">Africa</a>
+        <a href="https://galaxyfly.co.uk/destination/Australia">Australia</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="https://galaxyfly.co.uk/">Home</a>
+        <a href="https://galaxyfly.co.uk/deals">Deals</a>
+        <a href="https://galaxyfly.co.uk/about">About</a>
+        <a href="https://galaxyfly.co.uk/contact">Contact</a>
+        <a href="https://galaxyfly.co.uk/terms">Terms</a>
+        <a href="https://galaxyfly.co.uk/privacy">Privacy</a>
+        <a href="https://galaxyfly.co.uk/refund">Refund</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="tel:02081784401">0208 178 4401</a>
+        <a href="mailto:support@galaxyfly.co.uk">support@galaxyfly.co.uk</a>
+        <p style="margin-top:10px">2 Manor House Lane<br>Datchet, Slough<br>Berkshire SL3 9EB</p>
+        <p style="font-size:11px;margin-top:6px;opacity:.7">Company No. 12535908</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Galaxy Fly · Galaxy Travel Ltd</span>
+      <span>Cheap Business Class flights to Trinidad from UK</span>
+    </div>
+  </div>
 </footer>
 
 <script>
-document.getElementById('yr').textContent=new Date().getFullYear();
-const n=document.getElementById('nav');
-addEventListener('scroll',()=>n.classList.toggle('scrolled',scrollY>40),{passive:true});
-const m=document.getElementById('mob');
-document.getElementById('ham').onclick=()=>m.classList.add('open');
-document.getElementById('mx').onclick=()=>m.classList.remove('open');
-m.querySelectorAll('a').forEach(a=>a.onclick=()=>m.classList.remove('open'));
-(function(){const d=new Date();d.setDate(d.getDate()+21);const r=new Date(d);r.setDate(r.getDate()+14);const f=x=>x.toISOString().slice(0,10);
-document.getElementById('dep').value=f(d);document.getElementById('ret').value=f(r)})();
-document.getElementById('qf').onsubmit=function(e){e.preventDefault();location.href='https://galaxyfly.co.uk/contact'};
-document.querySelectorAll('.fq').forEach(b=>b.onclick=()=>{const i=b.parentElement;const o=i.classList.contains('open');
-document.querySelectorAll('.fi').forEach(x=>x.classList.remove('open'));if(!o)i.classList.add('open')});
-(function(){const els=document.querySelectorAll('.rv');
-if(!('IntersectionObserver' in window)){els.forEach(e=>e.classList.add('on'));return}
-const io=new IntersectionObserver(es=>{es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('on');io.unobserve(en.target)}})},{threshold:0.1});
-els.forEach(e=>io.observe(e))})();
+document.getElementById('year').textContent = new Date().getFullYear();
+
+const header = document.getElementById('header');
+addEventListener('scroll', () => header.classList.toggle('scrolled', scrollY > 40), { passive: true });
+
+const mobileNav = document.getElementById('mobile-nav');
+document.getElementById('menu-toggle').onclick = () => mobileNav.classList.add('open');
+document.getElementById('menu-close').onclick = () => mobileNav.classList.remove('open');
+mobileNav.querySelectorAll('a').forEach(a => a.onclick = () => mobileNav.classList.remove('open'));
+
+(function () {
+  const d = new Date(); d.setDate(d.getDate() + 21);
+  const r = new Date(d); r.setDate(r.getDate() + 14);
+  const f = x => x.toISOString().slice(0, 10);
+  document.getElementById('depart').value = f(d);
+  document.getElementById('return').value = f(r);
+})();
+
+document.getElementById('search-form').onsubmit = function (e) {
+  e.preventDefault();
+  location.href = 'https://galaxyfly.co.uk/contact';
+};
+
+document.querySelectorAll('.faq-q').forEach(btn => {
+  btn.onclick = () => {
+    const item = btn.parentElement;
+    const open = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!open) item.classList.add('open');
+  };
+});
+
+(function () {
+  const els = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)) {
+    els.forEach(e => e.classList.add('visible'));
+    return;
+  }
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(en => {
+      if (en.isIntersecting) {
+        en.target.classList.add('visible');
+        io.unobserve(en.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  els.forEach(e => io.observe(e));
+})();
 </script>
 </body>
 </html>
