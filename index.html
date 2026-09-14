@@ -11,6 +11,15 @@
 <meta property="og:title" content="Cheap Business Class Flights to Trinidad from UK | Galaxy Fly">
 <meta property="og:description" content="Business Class options from UK airports to Trinidad, Port of Spain and Piarco International Airport.">
 <meta property="og:url" content="https://galaxyfly.co.uk/">
+<meta property="og:image" content="https://galaxyfly.co.uk/tt-vista.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="Galaxy Fly">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cheap Business Class Flights to Trinidad from UK | Galaxy Fly">
+<meta name="twitter:description" content="Business Class options from UK airports to Trinidad, Port of Spain and Piarco International Airport.">
+<meta name="twitter:image" content="https://galaxyfly.co.uk/tt-vista.jpg">
 <meta name="theme-color" content="#0c1a24">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,8 +42,6 @@ body { font-family: var(--sans); color: #1c2730; background: #fff; line-height: 
 a { color: inherit; text-decoration: none; }
 img { max-width: 100%; height: auto; display: block; }
 .wrap { width: min(var(--max), calc(100% - 40px)); margin: 0 auto; }
-
-/* Header */
 .header {
   position: fixed; top: 0; left: 0; right: 0; z-index: 50;
   padding: 18px 0; transition: background .3s, box-shadow .3s, padding .3s;
@@ -99,19 +106,19 @@ img { max-width: 100%; height: auto; display: block; }
   background: none; text-align: left; font-family: var(--sans); cursor: pointer;
 }
 .mobile-nav .close { align-self: flex-end; font-size: 22px; border: 0; }
-
-/* Hero */
 .hero {
-  position: relative; min-height: 88vh;
+  position: relative; min-height: 90vh;
   display: flex; align-items: flex-end; color: #fff; overflow: hidden;
 }
 .hero-bg {
   position: absolute; inset: 0;
   background: url("tt-vista.jpg") center/cover no-repeat;
+  animation: ken 24s ease-in-out infinite alternate;
 }
+@keyframes ken { to { transform: scale(1.1); } }
 .hero::before {
   content: ""; position: absolute; inset: 0; z-index: 1;
-  background: linear-gradient(180deg, rgba(12,26,36,.35) 0%, rgba(12,26,36,.15) 40%, rgba(12,26,36,.78) 100%);
+  background: linear-gradient(180deg, rgba(12,26,36,.3) 0%, rgba(12,26,36,.12) 40%, rgba(12,26,36,.82) 100%);
 }
 .hero-content {
   position: relative; z-index: 2;
@@ -131,8 +138,6 @@ h1 {
   margin-bottom: 28px; line-height: 1.7;
 }
 .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
-
-/* Search */
 .search-section { background: var(--cream); padding: 0 0 56px; }
 .search-card {
   margin-top: -40px; position: relative; z-index: 5;
@@ -164,44 +169,42 @@ h1 {
 }
 .search-note { margin-top: 12px; font-size: 13px; color: var(--muted); }
 .search-note a { font-weight: 600; color: var(--navy); border-bottom: 1px solid var(--gold); }
-
-/* Sections */
 section { padding: 72px 0; }
 .section-title {
   font-family: var(--serif); font-size: clamp(26px, 3.4vw, 36px);
   font-weight: 500; color: var(--navy); margin: 8px 0 12px; line-height: 1.2;
 }
 .section-text { font-size: 15px; color: var(--muted); max-width: 520px; line-height: 1.75; }
-
-/* Intro split */
 .intro-grid {
   display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center;
 }
 .intro-grid img {
-  width: 100%; aspect-ratio: 4/3; object-fit: cover;
+  width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 4px;
+  box-shadow: 0 20px 50px rgba(12,26,36,.12);
 }
 .intro-grid p { margin-bottom: 12px; }
-
-/* Port of Spain */
 .pos-block {
   display: grid; grid-template-columns: 1.2fr 1fr; min-height: 480px;
 }
 .pos-image { overflow: hidden; }
-.pos-image img { width: 100%; height: 100%; object-fit: cover; min-height: 480px; }
+.pos-image img { width: 100%; height: 100%; object-fit: cover; min-height: 480px; transition: transform 8s ease; }
+.pos-image:hover img { transform: scale(1.05); }
 .pos-copy {
   display: flex; flex-direction: column; justify-content: center;
   padding: 48px 8%; background: var(--cream);
 }
 .pos-copy p { margin-bottom: 12px; color: var(--muted); font-size: 15px; }
-
-/* Gallery */
 .gallery-grid {
-  display: grid; grid-template-columns: 1.5fr 1fr; grid-template-rows: 240px 200px; gap: 12px;
+  display: grid; grid-template-columns: 1.5fr 1fr; grid-template-rows: 260px 220px; gap: 12px;
 }
-.gallery-grid img { width: 100%; height: 100%; object-fit: cover; }
+.gallery-grid img { width: 100%; height: 100%; object-fit: cover; border-radius: 4px; }
 .gallery-grid .tall { grid-row: 1 / 3; }
-
-/* UK cities */
+.video-wrap {
+  position: relative; border-radius: 12px; overflow: hidden;
+  aspect-ratio: 16/9; background: #000; box-shadow: 0 24px 60px rgba(12,26,36,.2);
+  margin-top: 28px;
+}
+.video-wrap iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 .uk-list { margin-top: 32px; }
 .uk-row {
   display: grid; grid-template-columns: 140px 1fr auto;
@@ -216,11 +219,9 @@ section { padding: 72px 0; }
   text-transform: uppercase; color: var(--navy);
   border-bottom: 1px solid var(--gold); padding-bottom: 2px;
 }
-
-/* Business Class */
 .bc-section { background: var(--navy); color: #fff; }
 .bc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
-.bc-grid img { width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+.bc-grid img { width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 4px; }
 .bc-section .section-title { color: #fff; }
 .bc-section .section-text { color: rgba(255,255,255,.65); }
 .bc-list { list-style: none; margin: 20px 0 24px; }
@@ -230,8 +231,6 @@ section { padding: 72px 0; }
   color: rgba(255,255,255,.8);
 }
 .bc-list li::before { content: "— "; color: var(--gold); }
-
-/* Deals */
 .deals-feature {
   background: var(--navy); color: #fff; padding: 36px;
   display: flex; justify-content: space-between; align-items: center;
@@ -251,16 +250,12 @@ section { padding: 72px 0; }
   font-size: 12px; font-weight: 700; letter-spacing: 0.06em;
   text-transform: uppercase; border-bottom: 1px solid var(--gold);
 }
-
-/* Why */
 .why-section { background: var(--cream); }
 .why-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 28px; }
 .why-item h3 {
   font-family: var(--serif); font-size: 18px; color: var(--navy); margin-bottom: 8px;
 }
 .why-item p { font-size: 14px; color: var(--muted); }
-
-/* FAQ */
 .faq-list { max-width: 680px; margin-top: 28px; }
 .faq-item { border-top: 1px solid var(--line); }
 .faq-item:last-child { border-bottom: 1px solid var(--line); }
@@ -278,10 +273,8 @@ section { padding: 72px 0; }
   padding: 0 32px 0 0;
 }
 .faq-item.open .faq-a { max-height: 160px; opacity: 1; padding-bottom: 16px; }
-
-/* Final CTA */
 .final-cta {
-  position: relative; min-height: 42vh;
+  position: relative; min-height: 48vh;
   display: flex; align-items: center; justify-content: center;
   text-align: center; color: #fff;
 }
@@ -297,8 +290,6 @@ section { padding: 72px 0; }
   font-weight: 500; margin: 10px 0 12px;
 }
 .final-inner p { font-size: 14px; color: rgba(255,255,255,.75); margin-bottom: 24px; }
-
-/* Footer */
 footer { background: #08141c; color: rgba(255,255,255,.5); padding: 48px 0 20px; }
 .footer-grid {
   display: grid; grid-template-columns: 1.3fr 1fr 1fr 1.1fr; gap: 28px;
@@ -320,14 +311,11 @@ footer p { font-size: 13px; line-height: 1.65; }
   padding-top: 14px; font-size: 12px;
   display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
 }
-
-/* Reveal */
 .reveal {
   opacity: 0; transform: translateY(16px);
   transition: opacity .6s ease, transform .6s ease;
 }
 .reveal.visible { opacity: 1; transform: none; }
-
 @media (max-width: 900px) {
   .nav-desktop, .header-phone { display: none; }
   .menu-toggle { display: block; }
@@ -335,7 +323,7 @@ footer p { font-size: 13px; line-height: 1.65; }
     grid-template-columns: 1fr;
   }
   .gallery-grid { grid-template-columns: 1fr; grid-template-rows: auto; }
-  .gallery-grid .tall { grid-row: auto; }
+  .gallery-grid .tall { grid-row: auto; height: 280px; }
   .search-grid { grid-template-columns: 1fr 1fr; }
   .search-submit { grid-column: 1 / -1; min-height: 48px; }
   .uk-row { grid-template-columns: 1fr; gap: 8px; }
@@ -347,6 +335,7 @@ footer p { font-size: 13px; line-height: 1.65; }
   section { padding: 56px 0; }
 }
 @media (prefers-reduced-motion: reduce) {
+  .hero-bg { animation: none; }
   .reveal { opacity: 1; transform: none; transition: none; }
 }
 </style>
@@ -364,7 +353,6 @@ footer p { font-size: 13px; line-height: 1.65; }
 </script>
 </head>
 <body>
-
 <header class="header" id="header">
   <div class="wrap header-inner">
     <a class="logo" href="https://galaxyfly.co.uk/"><span class="logo-mark">G</span> GALAXY FLY</a>
@@ -398,7 +386,6 @@ footer p { font-size: 13px; line-height: 1.65; }
     </div>
   </div>
 </header>
-
 <div class="mobile-nav" id="mobile-nav">
   <button type="button" class="close" id="menu-close" aria-label="Close">✕</button>
   <a href="https://galaxyfly.co.uk/destination/Caribbean">Trinidad / Caribbean</a>
@@ -408,11 +395,9 @@ footer p { font-size: 13px; line-height: 1.65; }
   <a href="https://galaxyfly.co.uk/contact">Contact</a>
   <a href="tel:02081784401">0208 178 4401</a>
 </div>
-
 <main>
-  <!-- 1. Hero -->
   <section class="hero">
-    <div class="hero-bg" role="img" aria-label="Trinidad Caribbean landscape"></div>
+    <div class="hero-bg" role="img" aria-label="Trinidad Caribbean coastline and landscape"></div>
     <div class="hero-content">
       <p class="eyebrow">Trinidad &amp; Tobago · Business Class</p>
       <h1>Cheap Business Class Flights to Trinidad from UK</h1>
@@ -423,8 +408,6 @@ footer p { font-size: 13px; line-height: 1.65; }
       </div>
     </div>
   </section>
-
-  <!-- 2. Search / Quote -->
   <div class="search-section">
     <div class="wrap">
       <div class="search-card">
@@ -454,8 +437,6 @@ footer p { font-size: 13px; line-height: 1.65; }
       </div>
     </div>
   </div>
-
-  <!-- 3. Trinidad intro -->
   <section>
     <div class="wrap intro-grid">
       <div class="reveal">
@@ -465,14 +446,12 @@ footer p { font-size: 13px; line-height: 1.65; }
         <p class="section-text">Galaxy Fly helps you explore Business Class and economy options from London, Manchester, Birmingham and Scotland.</p>
         <a class="btn btn-navy" href="https://galaxyfly.co.uk/destination/Caribbean" style="margin-top:8px">View Caribbean options</a>
       </div>
-      <img class="reveal" src="tt-bay.jpg" alt="Trinidad Caribbean coastline" width="600" height="450" loading="lazy">
+      <img class="reveal" src="tt-water.jpg" alt="Trinidad Caribbean turquoise water" width="600" height="450" loading="lazy">
     </div>
   </section>
-
-  <!-- 4. Port of Spain -->
   <section class="pos-block" id="port-of-spain" style="padding:0">
     <div class="pos-image">
-      <img src="tt-tropic.jpg" alt="Port of Spain region Trinidad" width="800" height="480" loading="lazy">
+      <img src="tt-tropic.jpg" alt="Tropical Trinidad landscape near Port of Spain" width="800" height="480" loading="lazy">
     </div>
     <div class="pos-copy">
       <p class="eyebrow reveal">Port of Spain</p>
@@ -482,23 +461,32 @@ footer p { font-size: 13px; line-height: 1.65; }
       <a class="btn btn-navy reveal" href="https://galaxyfly.co.uk/contact">Plan your arrival</a>
     </div>
   </section>
-
-  <!-- 5. Gallery -->
   <section>
     <div class="wrap">
       <p class="eyebrow reveal">Trinidad</p>
       <h2 class="section-title reveal">Coast, landscape and light</h2>
       <p class="section-text reveal" style="margin-bottom:28px">A glimpse of the island beyond the airport — coastline, tropical landscape and Caribbean atmosphere.</p>
       <div class="gallery-grid">
-        <img class="tall reveal" src="tt-vista.jpg" alt="Trinidad landscape vista" width="600" height="450" loading="lazy">
-        <img class="reveal" src="tt-green.jpg" alt="Tropical greenery Trinidad" width="400" height="240" loading="lazy">
-        <img class="reveal" src="tt-bay.jpg" alt="Caribbean bay Trinidad" width="400" height="200" loading="lazy">
+        <img class="tall reveal" src="tt-coast.jpg" alt="Trinidad Caribbean coastline aerial view" width="600" height="500" loading="lazy">
+        <img class="reveal" src="tt-green.jpg" alt="Tropical greenery Trinidad" width="400" height="260" loading="lazy">
+        <img class="reveal" src="tt-sunset.jpg" alt="Caribbean sunset Trinidad mood" width="400" height="220" loading="lazy">
       </div>
     </div>
   </section>
-
-  <!-- 6. UK cities -->
   <section style="background:var(--cream)">
+    <div class="wrap">
+      <p class="eyebrow reveal">Experience</p>
+      <h2 class="section-title reveal">See the Caribbean spirit</h2>
+      <p class="section-text reveal">A short look at the islands — then plan your flight from the UK with Galaxy Fly.</p>
+      <div class="gallery-grid reveal" style="margin-top:28px;grid-template-rows:280px 240px">
+        <img class="tall" src="tt-bay.jpg" alt="Trinidad Caribbean bay turquoise water" width="600" height="520" loading="lazy">
+        <img src="tt-water.jpg" alt="Clear Caribbean water Trinidad" width="400" height="280" loading="lazy">
+        <img src="tt-vista.jpg" alt="Trinidad island landscape vista" width="400" height="240" loading="lazy">
+      </div>
+      <p class="reveal" style="margin-top:14px;font-size:13px;color:var(--muted)">High-quality Caribbean imagery — Port of Spain journeys start at Piarco (POS).</p>
+    </div>
+  </section>
+  <section>
     <div class="wrap">
       <p class="eyebrow reveal">UK departures</p>
       <h2 class="section-title reveal">From the UK to Trinidad</h2>
@@ -532,11 +520,9 @@ footer p { font-size: 13px; line-height: 1.65; }
       </div>
     </div>
   </section>
-
-  <!-- 7. Business Class -->
   <section class="bc-section" id="business">
     <div class="wrap bc-grid">
-      <img class="reveal" src="av-seat.jpg" alt="Business Class cabin for Trinidad flights" width="560" height="420" loading="lazy">
+      <img class="reveal" src="av-seat.jpg" alt="Business Class cabin for Trinidad flights from UK" width="560" height="420" loading="lazy">
       <div class="reveal">
         <p class="eyebrow">Premium cabin</p>
         <h2 class="section-title">Travel to Trinidad in Business Class</h2>
@@ -551,8 +537,6 @@ footer p { font-size: 13px; line-height: 1.65; }
       </div>
     </div>
   </section>
-
-  <!-- 8. Deals -->
   <section>
     <div class="wrap">
       <p class="eyebrow reveal">Flight options</p>
@@ -585,8 +569,6 @@ footer p { font-size: 13px; line-height: 1.65; }
       </div>
     </div>
   </section>
-
-  <!-- 9. Why Galaxy Fly -->
   <section class="why-section">
     <div class="wrap">
       <p class="eyebrow reveal">Why Galaxy Fly</p>
@@ -611,8 +593,6 @@ footer p { font-size: 13px; line-height: 1.65; }
       </div>
     </div>
   </section>
-
-  <!-- 10. FAQ -->
   <section>
     <div class="wrap">
       <p class="eyebrow reveal">Questions</p>
@@ -641,10 +621,8 @@ footer p { font-size: 13px; line-height: 1.65; }
       </div>
     </div>
   </section>
-
-  <!-- 11. Final CTA -->
   <section class="final-cta">
-    <img src="tt-bay.jpg" alt="Trinidad journey from the UK" width="1400" height="500" loading="lazy">
+    <img src="tt-sunset.jpg" alt="Trinidad Caribbean sunset journey from UK" width="1400" height="500" loading="lazy">
     <div class="final-inner reveal">
       <p class="eyebrow">Next step</p>
       <h2>Ready to fly to Trinidad?</h2>
@@ -653,7 +631,6 @@ footer p { font-size: 13px; line-height: 1.65; }
     </div>
   </section>
 </main>
-
 <footer>
   <div class="wrap">
     <div class="footer-grid">
@@ -697,18 +674,14 @@ footer p { font-size: 13px; line-height: 1.65; }
     </div>
   </div>
 </footer>
-
 <script>
 document.getElementById('year').textContent = new Date().getFullYear();
-
 const header = document.getElementById('header');
 addEventListener('scroll', () => header.classList.toggle('scrolled', scrollY > 40), { passive: true });
-
 const mobileNav = document.getElementById('mobile-nav');
 document.getElementById('menu-toggle').onclick = () => mobileNav.classList.add('open');
 document.getElementById('menu-close').onclick = () => mobileNav.classList.remove('open');
 mobileNav.querySelectorAll('a').forEach(a => a.onclick = () => mobileNav.classList.remove('open'));
-
 (function () {
   const d = new Date(); d.setDate(d.getDate() + 21);
   const r = new Date(d); r.setDate(r.getDate() + 14);
@@ -716,12 +689,10 @@ mobileNav.querySelectorAll('a').forEach(a => a.onclick = () => mobileNav.classLi
   document.getElementById('depart').value = f(d);
   document.getElementById('return').value = f(r);
 })();
-
 document.getElementById('search-form').onsubmit = function (e) {
   e.preventDefault();
   location.href = 'https://galaxyfly.co.uk/contact';
 };
-
 document.querySelectorAll('.faq-q').forEach(btn => {
   btn.onclick = () => {
     const item = btn.parentElement;
@@ -730,7 +701,6 @@ document.querySelectorAll('.faq-q').forEach(btn => {
     if (!open) item.classList.add('open');
   };
 });
-
 (function () {
   const els = document.querySelectorAll('.reveal');
   if (!('IntersectionObserver' in window)) {
